@@ -1,0 +1,44 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 659 >>
+stream
+BT /F1 30 Tf 72 720 Td (YOUR NAME) Tj ET
+BT /F2 14 Tf 72 694 Td ([YOUR ROLE] [YOUR EMAIL] [YOUR PHONE] [YOUR LOCATION]) Tj ET
+BT /F2 14 Tf 72 664 Td (Curriculum vitae placeholder - replace this file with your real CV in) Tj ET
+BT /F2 14 Tf 72 648 Td (assets/resume/. Keep the same filename to keep the download link working.) Tj ET
+BT /F1 20 Tf 72 600 Td (Experience) Tj ET
+BT /F2 13 Tf 72 572 Td (- [Job title] at [Company], [Year range]) Tj ET
+BT /F2 13 Tf 72 548 Td (- [Job title] at [Company], [Year range]) Tj ET
+BT /F1 20 Tf 72 508 Td (Skills) Tj ET
+BT /F2 13 Tf 72 480 Td (- Web Design / UI/UX / Development / Data / Marketing / Microsoft Office) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000961 00000 n 
+0000001036 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1106
+%%EOF

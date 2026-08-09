@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Responsive layout
+   Breakpoints tested: 320, 375, 425, 768, 1024, 1280, 1440+
+   Mobile-first overrides on top of style.css.
+   ========================================================================== */
+
+/* ---------- Tablet landscape / small laptop ---------- */
+@media (max-width: 1120px) {
+  .services-grid,
+  .projects-grid,
+  .skills-grid,
+  .why-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
+  }
+  .hero-ring--a { width: 460px; height: 460px; }
+  .hero-ring--b { width: 540px; height: 540px; }
+}
+
+/* ---------- Tablet portrait and below / hamburger menu ---------- */
+@media (max-width: 940px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    z-index: 105;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    padding: 1.1rem 1.25rem 1.9rem;
+    max-height: calc(100dvh - var(--header-h));
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-16px);
+    transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+  }
+  .nav-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .25rem;
+  }
+  .nav-link {
+    display: block;
+    padding: .9rem 1rem;
+    font-size: 1.05rem;
+    border-radius: var(--radius);
+  }
+  .nav-cta-item {
+    margin-top: .75rem;
+  }
+  .nav-cta {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .hero-visual {
+    order: 2;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    max-width: 620px;
+  }
+  .timeline::before {
+    left: 22px;
+    transform: none;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 62px;
+    margin: 0 0 1.6rem !important;
+  }
+  .timeline-item:nth-child(odd) .timeline-marker,
+  .timeline-item:nth-child(even) .timeline-marker {
+    left: 0;
+    right: auto;
+    transform: none;
+    box-shadow: 0 0 0 6px var(--surface),
+                0 4px 12px rgba(16, 42, 38, .12);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+  .pricing-card--featured {
+    order: -1;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Phones (large) ---------- */
+@media (max-width: 640px) {
+  .services-grid,
+  .projects-grid,
+  .skills-grid,
+  .why-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-frame {
+    width: min(360px, 100%);
+  }
+  .hero-ring--a { width: 340px; height: 340px; }
+  .hero-ring--b { display: none; }
+  .hero-blob--a { width: 220px; height: 220px; }
+  .hero-blob--b { width: 180px; height: 180px; }
+  .hero-circuit { width: 120px; height: 120px; }
+
+  .hero-card--exp {
+    top: 10%;
+    left: 0;
+  }
+  .hero-card--proj {
+    right: 0;
+    bottom: 8%;
+  }
+  .hero-card {
+    padding: .8rem 1rem;
+  }
+  .hero-card-num { font-size: 1.4rem; }
+  .hero-card-lbl { font-size: .74rem; }
+
+  .modal-media { aspect-ratio: 16 / 10; }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 480px) {
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-actions .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-greeting { font-size: .92rem; }
+  .hero-title { font-size: clamp(2rem, 8vw, 2.5rem); }
+
+  .hero-visual {
+    padding: 1rem 0 2rem;
+  }
+  .hero-badge {
+    top: 0;
+    right: 0;
+    font-size: .76rem;
+    padding: .4rem .8rem;
+  }
+
+  .about-actions,
+  .modal-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-actions .btn,
+  .modal-actions .btn {
+    justify-content: center;
+  }
+
+  .timeline-card {
+    padding: 1.3rem 1.4rem;
+  }
+
+  .nav-menu {
+    padding: .9rem 1rem 1.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: .35rem;
+  }
+}
+
+/* ---------- Narrowest (320px) ---------- */
+@media (max-width: 360px) {
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .3rem;
+    padding: .7rem .9rem;
+  }
+  .hero-card--exp { left: .35rem; }
+  .hero-card--proj { right: .35rem; }
+
+  .stat-card { padding: 1.4rem 1rem; }
+  .stat-num { font-size: 1.9rem; }
+
+  .contact-list li { padding: 1rem; }
+}

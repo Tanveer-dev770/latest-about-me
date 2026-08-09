@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[YOUR NAME] — [YOUR ROLE] | Portfolio</title>
+  <meta name="description" content="Portfolio of [YOUR NAME], a [YOUR ROLE] focused on web design, UI/UX, web development, data analysis, and digital marketing.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="[YOUR NAME]">
+  <meta name="theme-color" content="#0ea5a4">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[YOUR NAME] — [YOUR ROLE] | Portfolio">
+  <meta property="og:description" content="Creating clean, responsive, user-friendly digital experiences that combine thoughtful design with reliable technology.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:url" content="https://[YOUR-DOMAIN].com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="[YOUR NAME] - back to top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V8l14 8V8"/></svg>
+        </span>
+        <span class="brand-name">[YOUR&nbsp;NAME]</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link is-active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#process">Process</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-cta-item">
+            <a class="btn btn--primary btn--sm nav-cta" href="#contact">Let's Talk</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting reveal" data-delay="60ms"><span class="dot" aria-hidden="true"></span> Hi, I'm [YOUR NAME]</p>
+          <h1 class="hero-title reveal" id="heroTitle" data-delay="140ms">
+            I Design &amp; Build <span class="accent">Digital Experiences</span> That Make an Impact.
+          </h1>
+          <p class="hero-sub reveal" data-delay="220ms">
+            I'm a <strong>[YOUR ROLE]</strong> focused on creating clean, responsive, user-friendly digital
+            experiences that combine thoughtful design with reliable technology.
+          </p>
+
+          <div class="hero-actions reveal" data-delay="300ms">
+            <a class="btn btn--primary" href="#projects">View My Work <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn--outline" href="assets/resume/YOUR-NAME-CV.pdf" download="[YOUR-NAME]-CV.pdf">
+              Download CV <span class="btn-arrow" aria-hidden="true">&darr;</span>
+            </a>
+          </div>
+
+          <div class="hero-social reveal" data-delay="380ms">
+            <span class="hero-social-label">Find me on</span>
+            <a href="https://github.com/[YOUR-GITHUB]" aria-label="GitHub profile" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/[YOUR-LINKEDIN]" aria-label="LinkedIn profile" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>
+            </a>
+            <a href="https://facebook.com/[YOUR-FACEBOOK]" aria-label="Facebook profile" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.8V24C19.62 23.09 24 18.1 24 12.07Z"/></svg>
+            </a>
+            <a href="https://instagram.com/[YOUR-INSTAGRAM]" aria-label="Instagram profile" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07c-3.94.18-6.18 2.42-6.36 6.36C.63 7.71.62 8.12.62 11.37c0 3.25.01 3.66.07 4.94.18 3.94 2.42 6.18 6.36 6.36 1.28.06 1.69.07 4.95.07 3.25 0 3.66-.01 4.94-.07 3.94-.18 6.18-2.42 6.36-6.36.06-1.28.07-1.69.07-4.94 0-3.25-.01-3.66-.07-4.94-.18-3.94-2.42-6.18-6.36-6.36A53 53 0 0 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.15A4 4 0 1 1 16 12a4 4 0 0 1-4 3.99ZM19.85 5.6a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-ring hero-ring--a" aria-hidden="true"></div>
+          <div class="hero-ring hero-ring--b" aria-hidden="true"></div>
+          <div class="hero-blob hero-blob--a" aria-hidden="true"></div>
+          <div class="hero-blob hero-blob--b" aria-hidden="true"></div>
+
+          <div class="hero-frame">
+            <img class="hero-img" src="assets/images/profile.jpg" alt="Portrait of [YOUR NAME], [YOUR ROLE]">
+            <div class="hero-frame-inner" aria-hidden="true"></div>
+          </div>
+
+          <svg class="hero-circuit" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M8 96h26l8-12 10 16 8-24 12 20 10-12 12 12h18"/>
+            <path d="M96 82v16h18"/>
+            <circle cx="8" cy="96" r="3.4" fill="currentColor" stroke="none"/>
+            <circle cx="8" cy="96" r="5.6"/>
+            <circle cx="126" cy="96" r="3.4" fill="currentColor" stroke="none"/>
+            <circle cx="126" cy="96" r="5.6"/>
+            <circle cx="60" cy="76" r="3"/>
+            <circle cx="92" cy="76" r="3"/>
+          </svg>
+
+          <div class="hero-card hero-card--exp" role="group" aria-label="Experience">
+            <span class="hero-card-num">5+</span>
+            <span class="hero-card-lbl">Years<br>Experience</span>
+          </div>
+
+          <div class="hero-card hero-card--proj" role="group" aria-label="Projects completed">
+            <span class="hero-card-num">20+</span>
+            <span class="hero-card-lbl">Projects<br>Completed</span>
+          </div>
+
+          <div class="hero-badge" role="group" aria-label="Available for work">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            Open to work
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
+          <path d="M0 90 C 240 40 420 10 720 30 C 1020 50 1200 70 1440 25 L 1440 90 Z" fill="var(--surface)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section section--surface" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>About Me</p>
+          <h2 class="section-title" id="aboutTitle">Turning Ideas Into Clean, Useful Digital Experiences.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <p class="lead">
+              I'm <strong>[YOUR NAME]</strong>, a <strong>[YOUR ROLE]</strong> who enjoys the whole journey of a
+              product — from the first sketch to the final pixel.
+            </p>
+            <p>
+              My background spans web design, UI/UX, frontend development, data work, and digital marketing.
+              I care about how things look, how they work, and whether they actually help people. I approach every
+              project with a problem-solving mindset and a strong attention to detail.
+            </p>
+            <p>
+              I'm constantly learning — exploring new tools, techniques, and technologies so the experiences I build
+              stay modern, accessible, and performant. When I take on a project, my goal is simple: deliver something
+              clean, useful, and worth trusting.
+            </p>
+
+            <div class="about-tools" aria-label="Tools I use">
+              <span>Figma</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>Excel</span><span>Google Workspace</span>
+            </div>
+
+            <div class="about-actions">
+              <a class="btn btn--primary" href="assets/resume/YOUR-NAME-CV.pdf" download="[YOUR-NAME]-CV.pdf">
+                Download CV <span class="btn-arrow" aria-hidden="true">&darr;</span>
+              </a>
+              <a class="btn btn--ghost" href="#contact">Let's Work Together</a>
+            </div>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="stat-num">XX+</span>
+              <span class="stat-lbl">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">XX+</span>
+              <span class="stat-lbl">Happy Clients</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">XX</span>
+              <span class="stat-lbl">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">XX%</span>
+              <span class="stat-lbl">Client Satisfaction</span>
+            </div>
+            <div class="stat-note">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5a4.5 4.5 0 0 1 4 6.9c1.9.8 3.3 2.6 3.5 4.6-1.3 1-3 1.5-4.7 1.5-1.6 0-3-.6-4.2-1.5a7.6 7.6 0 0 1-3.3 1.5V7.9A4.5 4.5 0 0 1 12 2.5Z"/><path d="M8.6 14.4c-2.2 1-3.4 2.6-3.6 4.5 2 .3 4.1 2.6 4.1 2.6"/></svg>
+              Replace these values with your real numbers before publishing.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Services</p>
+          <h2 class="section-title" id="servicesTitle">What I Can Do</h2>
+          <p class="section-sub">Practical, focused services that help you design, build, and grow digital products.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">01</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 3.5 12.5 12 14l1.5 8.5L23 12.5 14.5 11 13 2.5Z"/></svg></span>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-text">Interfaces that feel intuitive and look polished — built around real users and clear goals.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">02</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2.5"/><path d="M8 21h8M12 17v4"/></svg></span>
+            </div>
+            <h3 class="service-title">Web Design</h3>
+            <p class="service-text">Modern, on-brand website layouts with strong hierarchy, spacing, and visual detail.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">03</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 4l-3 16"/></svg></span>
+            </div>
+            <h3 class="service-title">Frontend Development</h3>
+            <p class="service-text">Semantic, accessible, and fast interfaces built with clean HTML, CSS, and JavaScript.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">04</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 3v13.5A1.5 1.5 0 0 0 5 18h15.5"/><path d="M7.5 13.5 11 10l3 3 5-6"/></svg></span>
+            </div>
+            <h3 class="service-title">Data Analysis</h3>
+            <p class="service-text">Turning raw data into clear insights and clean, easy-to-read visualisations.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">05</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 0 1 17 0"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4"/><circle cx="12" cy="12" r="1.8"/></svg></span>
+            </div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-text">Simple, measurable campaigns that connect your brand with the right audience.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-top">
+              <span class="service-num">06</span>
+              <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="14" height="13" rx="2.5"/><path d="M6.5 21h6M9.5 16.5v4.5"/><rect x="14.5" y="9" width="7" height="8.5" rx="2"/></svg></span>
+            </div>
+            <h3 class="service-title">Responsive Website Development</h3>
+            <p class="service-text">Websites that look and work beautifully across every screen size — from mobile to desktop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section--surface" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Portfolio</p>
+          <h2 class="section-title" id="projectsTitle">Featured Projects</h2>
+          <p class="section-sub">A selection of projects that demonstrate my design, development, and problem-solving skills.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="web-design" aria-pressed="false">Web Design</button>
+          <button class="filter-btn" type="button" data-filter="ui-ux" aria-pressed="false">UI/UX</button>
+          <button class="filter-btn" type="button" data-filter="development" aria-pressed="false">Development</button>
+          <button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data</button>
+          <button class="filter-btn" type="button" data-filter="marketing" aria-pressed="false">Marketing</button>
+        </div>
+
+        <ul class="projects-grid" id="projectsGrid">
+          <li class="project-item reveal" data-categories="web-design development">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-1.jpg" alt="Preview of the Portfolio Website project" loading="lazy" width="600" height="450">
+                <span class="project-badge">Web Design</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-text">A personal portfolio site focused on clean layout, subtle motion, and strong typography.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p1">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Portfolio Website on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-item reveal" data-categories="ui-ux">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-2.jpg" alt="Preview of the Academic Learning Platform project" loading="lazy" width="600" height="450">
+                <span class="project-badge">UI/UX · Education</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Academic Learning Platform</h3>
+                <p class="project-text">A user-focused learning interface designed around clear navigation and progress tracking.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>UI/UX</li><li>Prototyping</li><li>Figma</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p2">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Academic Learning Platform on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-item reveal" data-categories="data">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-3.jpg" alt="Preview of the Data Dashboard project" loading="lazy" width="600" height="450">
+                <span class="project-badge">Data Analysis</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Data Dashboard</h3>
+                <p class="project-text">An interactive dashboard that turns raw metrics into clear, sharable visual stories.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>Excel</li><li>Data Viz</li><li>Charts</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p3">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Data Dashboard on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-item reveal" data-categories="development web-design">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-4.jpg" alt="Preview of the Business Website project" loading="lazy" width="600" height="450">
+                <span class="project-badge">Web Development</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Business Website</h3>
+                <p class="project-text">A professional company website balancing strong branding with clear user journeys.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p4">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Business Website on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-item reveal" data-categories="marketing">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-5.jpg" alt="Preview of the Digital Marketing Campaign project" loading="lazy" width="600" height="450">
+                <span class="project-badge">Digital Marketing</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Digital Marketing Campaign</h3>
+                <p class="project-text">A focused campaign strategy with clear messaging, audience targeting, and results tracking.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>Strategy</li><li>Social</li><li>Analytics</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p5">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Digital Marketing Campaign on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <li class="project-item reveal" data-categories="ui-ux development">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="assets/images/project-6.jpg" alt="Preview of the Custom Landing Page project" loading="lazy" width="600" height="450">
+                <span class="project-badge">UI/UX · Conversion</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Custom Landing Page</h3>
+                <p class="project-text">A conversion-focused landing page designed to guide visitors toward a single action.</p>
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>UI/UX</li><li>Copy</li><li>CSS</li>
+                </ul>
+                <div class="project-actions">
+                  <button class="project-link" type="button" data-project="p6">View Project <span aria-hidden="true">&rarr;</span></button>
+                  <a class="project-icon-link" href="https://github.com/[YOUR-GITHUB]" aria-label="View Custom Landing Page on GitHub" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Skills</p>
+          <h2 class="section-title" id="skillsTitle">What I Work With</h2>
+          <p class="section-sub">A flexible toolkit across design, development, data, productivity, and marketing.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5c-7 0-10.5-3-10.5-5.5C1.5 12.5 5 10 12 10s10.5 2.5 10.5 5c0 2.5-3.5 5.5-10.5 5.5Z"/><path d="M12 13.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/><path d="M7.5 16.5h.01M9.5 12.5v1M14.5 12.5v1M16.5 16.5h.01"/></svg></span>
+              <h3>Design</h3>
+            </div>
+            <ul class="skill-list">
+              <li>UI/UX Design</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Design Systems</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 4l-3 16"/></svg></span>
+              <h3>Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 3v13.5A1.5 1.5 0 0 0 5 18h15.5"/><path d="M7.5 13.5 11 10l3 3 5-6"/></svg></span>
+              <h3>Data</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Data Analysis</li>
+              <li>Data Visualization</li>
+              <li>Data Entry</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="14" height="10" rx="2"/><path d="M16.5 11h3a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2"/><path d="M8 14h8M11 6v4"/></svg></span>
+              <h3>Productivity</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Microsoft Word</li>
+              <li>Microsoft Excel</li>
+              <li>PowerPoint</li>
+              <li>Google Workspace</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 0 1 17 0"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4"/><circle cx="12" cy="12" r="1.8"/></svg></span>
+              <h3>Marketing</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Digital Marketing</li>
+              <li>Social Media Marketing</li>
+              <li>Campaign Analysis</li>
+            </ul>
+          </article>
+
+          <article class="skill-card skill-card--note reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 8v8M8 12h8"/></svg></span>
+              <h3>Always Learning</h3>
+            </div>
+            <p class="skill-note-text">I'm regularly adding new tools and techniques to this list. If you need something specific, just ask.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section id="process" class="section section--surface" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Process</p>
+          <h2 class="section-title" id="processTitle">My Design &amp; Development Process</h2>
+          <p class="section-sub">A clear, proven path from the first conversation to a finished product.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 3v18M3 12h18"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">01</span>
+              <h3>Discover</h3>
+              <p>Understand goals, users, requirements, and the real problems worth solving.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">02</span>
+              <h3>Plan</h3>
+              <p>Research, define scope, structure the content, and build clear wireframes.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 3.5 12.5 12 14l1.5 8.5L23 12.5 14.5 11 13 2.5Z"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">03</span>
+              <h3>Design</h3>
+              <p>Create a clean, consistent, user-focused interface that builds trust at a glance.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 4l-3 16"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">04</span>
+              <h3>Develop</h3>
+              <p>Build responsive, accessible, and performant interfaces with clean code.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 0 1 17 0"/><path d="M3.5 12a8.5 8.5 0 0 0 17 0"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4"/><circle cx="12" cy="12" r="1.8"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">05</span>
+              <h3>Test</h3>
+              <p>Test usability, responsiveness, accessibility, and cross-browser behavior.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 21h17M5.5 21V9.5L12 4l6.5 5.5V21"/><path d="M9.5 21v-7h5v7"/></svg></div>
+            <div class="timeline-card">
+              <span class="timeline-num">06</span>
+              <h3>Deliver</h3>
+              <p>Deploy the final product, document what matters, and provide ongoing support.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY WORK WITH ME ============ -->
+    <section id="why" class="section" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Why Me</p>
+          <h2 class="section-title" id="whyTitle">Why Work With Me</h2>
+          <p class="section-sub">The qualities that make a collaboration smooth and the end result worth it.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M2.5 21c.8-4 4.6-6.5 9.5-6.5s8.7 2.5 9.5 6.5"/><path d="M17 3l1 1.5L19.5 5 18 6.5 17 8l-1-1.5L13.5 5 16 4.5 17 3Z"/></svg></span>
+            <h3>Clean &amp; Modern Design</h3>
+            <p>Thoughtful, minimal interfaces with strong hierarchy and a premium feel.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="14" height="13" rx="2.5"/><path d="M6.5 21h6M9.5 16.5v4.5"/><rect x="14.5" y="9" width="7" height="8.5" rx="2"/></svg></span>
+            <h3>Responsive Across Devices</h3>
+            <p>Every build is tested from small phones to large desktops — never broken in between.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3>User-Focused Thinking</h3>
+            <p>Decisions grounded in user needs and goals, not just trends or preferences.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11h-8l-4 4v-4H4Z"/><path d="M8 9h8M8 12h5"/></svg></span>
+            <h3>Reliable Communication</h3>
+            <p>Clear updates, honest timelines, and a straightforward way of working together.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13 11 16l9-9"/><path d="M4 3h11v2H4v14h14v-8h2v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/></svg></span>
+            <h3>Attention to Detail</h3>
+            <p>Alignment, spacing, states, and edge cases — the small things get handled.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12c0 4.7-3.8 8.5-8.5 8.5S3.5 16.7 3.5 12 7.3 3.5 12 3.5c1.4 0 2.7.3 3.9.9"/><path d="M20.5 3.5 12 12l-.4-4"/></svg></span>
+            <h3>Performance-Focused</h3>
+            <p>Fast-loading, efficient code that respects users' time and devices.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="testimonials" class="section section--surface" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Testimonials</p>
+          <h2 class="section-title" id="testimonialsTitle">What Clients Say</h2>
+          <p class="section-sub"><em>Placeholder content — replace with real feedback before publishing.</em></p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" role="img" aria-label="Rated 5 out of 5 stars">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            </div>
+            <blockquote>
+              <p>"[Client testimonial goes here.] Replace this with a short, genuine quote about working together, the quality of the work, or the results delivered."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">[C]</span>
+              <div>
+                <strong>[Client Name]</strong>
+                <span>[Job Title / Company]</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" role="img" aria-label="Rated 5 out of 5 stars">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            </div>
+            <blockquote>
+              <p>"[Client testimonial goes here.] Describe the experience, communication, and the outcome. Keep it authentic and specific."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">[C]</span>
+              <div>
+                <strong>[Client Name]</strong>
+                <span>[Job Title / Company]</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-stars" role="img" aria-label="Rated 5 out of 5 stars">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></svg>
+            </div>
+            <blockquote>
+              <p>"[Client testimonial goes here.] Talk about reliability, quality, and whether you would recommend their work to others."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">[C]</span>
+              <div>
+                <strong>[Client Name]</strong>
+                <span>[Job Title / Company]</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="pricing" class="section" aria-labelledby="pricingTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Packages</p>
+          <h2 class="section-title" id="pricingTitle">Simple Options to Start</h2>
+          <p class="section-sub"><em>Placeholder pricing — confirm your actual rates before publishing.</em></p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price"><span class="pricing-cur">$</span>XXX</p>
+            <p class="pricing-desc">Small projects, quick wins, or a focused single-page site.</p>
+            <ul class="pricing-features">
+              <li>Single page / small project</li>
+              <li>Responsive layout</li>
+              <li>Basic SEO setup</li>
+              <li>1 revision round</li>
+            </ul>
+            <a class="btn btn--outline pricing-cta" href="#contact">Get Started</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured reveal" aria-label="Most popular plan">
+            <span class="pricing-badge">Most Popular</span>
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-price"><span class="pricing-cur">$</span>XXX</p>
+            <p class="pricing-desc">Multi-page business sites with design plus development.</p>
+            <ul class="pricing-features">
+              <li>Up to 6 pages</li>
+              <li>UI/UX design included</li>
+              <li>CMS or easy-to-edit content</li>
+              <li>On-page SEO</li>
+              <li>2 revision rounds</li>
+            </ul>
+            <a class="btn btn--primary pricing-cta" href="#contact">Get Started</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <h3 class="pricing-name">Premium</h3>
+            <p class="pricing-price"><span class="pricing-cur">$</span>XXX</p>
+            <p class="pricing-desc">Full product work, ongoing support, and priorities.</p>
+            <ul class="pricing-features">
+              <li>Unlimited pages / custom build</li>
+              <li>Advanced interactions</li>
+              <li>Analytics &amp; performance tuning</li>
+              <li>Priority support</li>
+              <li>Ongoing maintenance</li>
+            </ul>
+            <a class="btn btn--outline pricing-cta" href="#contact">Get Started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section--surface" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span aria-hidden="true"></span>Contact</p>
+          <h2 class="section-title" id="contactTitle">Let's Build Something Amazing Together</h2>
+          <p class="section-sub">Tell me about your project. I'll get back to you as soon as I can.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="16" rx="3"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg></span>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:your@email.com">your@email.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l1.5 5L8 11a14 14 0 0 0 5 5l2-2.5 5 1.5v4a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+880XXXXXXXXXX">+880 XXX XXXXXXX</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.1 7-11.2A7 7 0 0 0 5 10.3c0 5.1 7 11.2 7 11.2Z"/><circle cx="12" cy="10.2" r="2.6"/></svg></span>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Bangladesh</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3.5 2"/></svg></span>
+                <div>
+                  <span class="contact-label">Availability</span>
+                  <span class="contact-value">Available for selected projects</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="contact-note">
+              <strong>Prefer to talk?</strong>
+              <p>Email and phone work best. I usually reply within one business day.</p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="cf-name" name="name" autocomplete="name" required>
+                  <p class="form-error" role="alert" hidden></p>
+                </div>
+                <div class="form-group">
+                  <label for="cf-email">Your Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="cf-email" name="email" autocomplete="email" required>
+                  <p class="form-error" role="alert" hidden></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cf-type">Project Type</label>
+                <select id="cf-type" name="type">
+                  <option value="">Select a project type</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="ui-ux">UI/UX Design</option>
+                  <option value="development">Web Development</option>
+                  <option value="data">Data Analysis / Entry</option>
+                  <option value="marketing">Digital Marketing</option>
+                  <option value="other">Something Else</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-message">Your Message <span aria-hidden="true">*</span></label>
+                <textarea id="cf-message" name="message" rows="5" required></textarea>
+                <p class="form-error" role="alert" hidden></p>
+              </div>
+              <button class="btn btn--primary form-submit" type="submit">
+                Send Message <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <p class="form-status" role="status" aria-live="polite" hidden></p>
+
+              <!-- To connect this form to a real backend/email service later,
+                   add your endpoint (e.g. Formspree, a server route, or an API)
+                   and send the form data with fetch() inside js/main.js.
+                   The client-side validation and success state are already wired up. -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="[YOUR NAME] - back to top">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V8l14 8V8"/></svg>
+            </span>
+            <span class="brand-name">[YOUR&nbsp;NAME]</span>
+          </a>
+          <p>Creating thoughtful digital experiences that connect design, technology, and people.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Quick links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="assets/resume/YOUR-NAME-CV.pdf" download="[YOUR-NAME]-CV.pdf">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-social-col">
+          <h3>Social</h3>
+          <ul class="footer-social">
+            <li><a href="https://github.com/[YOUR-GITHUB]" aria-label="GitHub profile" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.9c.58.11.79-.25.79-.56v-2.76c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.15c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a></li>
+            <li><a href="https://linkedin.com/in/[YOUR-LINKEDIN]" aria-label="LinkedIn profile" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57v11.45Z"/></svg>LinkedIn</a></li>
+            <li><a href="https://facebook.com/[YOUR-FACEBOOK]" aria-label="Facebook profile" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.8V24C19.62 23.09 24 18.1 24 12.07Z"/></svg>Facebook</a></li>
+            <li><a href="https://instagram.com/[YOUR-INSTAGRAM]" aria-label="Instagram profile" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07c-3.94.18-6.18 2.42-6.36 6.36C.63 7.71.62 8.12.62 11.37c0 3.25.01 3.66.07 4.94.18 3.94 2.42 6.18 6.36 6.36 1.28.06 1.69.07 4.95.07 3.25 0 3.66-.01 4.94-.07 3.94-.18 6.18-2.42 6.36-6.36.06-1.28.07-1.69.07-4.94 0-3.25-.01-3.66-.07-4.94-.18-3.94-2.42-6.18-6.36-6.36A53 53 0 0 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.15A4 4 0 1 1 16 12a4 4 0 0 1-4 3.99ZM19.85 5.6a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 [YOUR NAME]. All rights reserved.</p>
+        <p>Built with HTML, CSS &amp; vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-overlay" data-modal-close></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" type="button" data-modal-close aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="modal-content">
+        <img class="modal-media" id="modalMedia" alt="" width="960" height="540">
+        <div class="modal-body">
+          <span class="modal-category" id="modalCategory"></span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+
+          <dl class="modal-details">
+            <div class="modal-detail">
+              <dt>My Role</dt>
+              <dd id="modalRole"></dd>
+            </div>
+            <div class="modal-detail">
+              <dt>Tools &amp; Technologies</dt>
+              <dd class="modal-tags" id="modalTools"></dd>
+            </div>
+            <div class="modal-detail">
+              <dt>Challenge</dt>
+              <dd id="modalChallenge"></dd>
+            </div>
+            <div class="modal-detail">
+              <dt>Solution</dt>
+              <dd id="modalSolution"></dd>
+            </div>
+            <div class="modal-detail">
+              <dt>Result</dt>
+              <dd id="modalResult"></dd>
+            </div>
+          </dl>
+
+          <div class="modal-actions">
+            <a class="btn btn--primary" id="modalLive" href="#" target="_blank" rel="noopener">Live Demo <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn--outline" id="modalGithub" href="#" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
