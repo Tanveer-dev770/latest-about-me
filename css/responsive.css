@@ -17,8 +17,6 @@
   .hero-grid {
     gap: 2.5rem;
   }
-  .hero-ring--a { width: 460px; height: 460px; }
-  .hero-ring--b { width: 540px; height: 540px; }
 }
 
 /* ---------- Tablet portrait and below / hamburger menu ---------- */
@@ -76,6 +74,17 @@
   }
   .hero-visual {
     order: 2;
+  }
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-sub {
+    margin-inline: auto;
+  }
+  .hero-actions,
+  .hero-social {
+    justify-content: center;
   }
 
   .about-grid,
@@ -135,10 +144,9 @@
     grid-template-columns: 1fr;
   }
 
-  .hero-frame {
+  .hero-composition {
     width: min(360px, 100%);
   }
-  .hero-ring--a { width: 340px; height: 340px; }
   .hero-ring--b { display: none; }
   .hero-blob--a { width: 220px; height: 220px; }
   .hero-blob--b { width: 180px; height: 180px; }

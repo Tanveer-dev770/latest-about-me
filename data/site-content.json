@@ -1,0 +1,374 @@
+{
+  "hero": {
+    "greeting": "Hi, I'm Tanveer",
+    "title": "I Design & Build <span class=\"accent\">Digital Experiences</span> That Make an Impact.",
+    "subtitle": "I'm a <strong>Full Stack Developer</strong> focused on creating clean, responsive, user-friendly digital experiences that combine thoughtful design with reliable technology.",
+    "primaryCta": "View My Work",
+    "secondaryCta": "Download CV",
+    "cvUrl": "assets/resume/cv.pdf",
+    "experienceNum": "5+",
+    "experienceLabel": "Years<br>Experience",
+    "projectsNum": "20+",
+    "projectsLabel": "Projects<br>Completed",
+    "picture": "assets/images/hero.png",
+    "social": [
+      { "key": "github", "label": "GitHub profile", "url": "https://github.com/Tanveer-dev770" },
+      { "key": "linkedin", "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tanveer770/" },
+      { "key": "facebook", "label": "Facebook profile", "url": "https://facebook.com/utanveer770" }
+    ]
+  },
+  "about": {
+    "heading": "Turning Ideas Into Clean, Useful Digital Experiences.",
+    "lead": "I'm <strong>Tanveer</strong>, a <strong>Full Stack Developer</strong> who enjoys the whole journey of a product — from the first sketch to the final pixel.",
+    "paragraphs": [
+      "My background spans web design, UI/UX, frontend development, data work, and digital marketing. I care about how things look, how they work, and whether they actually help people. I approach every project with a problem-solving mindset and a strong attention to detail.",
+      "I'm constantly learning — exploring new tools, techniques, and technologies so the experiences I build stay modern, accessible, and performant. When I take on a project, my goal is simple: deliver something clean, useful, and worth trusting."
+    ],
+    "tools": ["Figma", "HTML", "CSS", "JavaScript", "Excel", "Google Workspace"],
+    "stats": [
+      { "num": "30+", "label": "Projects Completed" },
+      { "num": "20+", "label": "Happy Clients" },
+      { "num": "05", "label": "Years Experience" },
+      { "num": "67%", "label": "Client Satisfaction" }
+    ],
+    "downloadCv": "Download CV",
+    "workTogether": "Let's Work Together"
+  },
+  "services": {
+    "heading": "What I Can Do",
+    "subtitle": "Practical, focused services that help you design, build, and grow digital products.",
+    "items": [
+      {
+        "icon": "feather",
+        "title": "UI/UX Design",
+        "text": "Interfaces that feel intuitive and look polished — built around real users and clear goals."
+      },
+      {
+        "icon": "screen",
+        "title": "Web Design",
+        "text": "Modern, on-brand website layouts with strong hierarchy, spacing, and visual detail."
+      },
+      {
+        "icon": "code",
+        "title": "Frontend Development",
+        "text": "Semantic, accessible, and fast interfaces built with clean HTML, CSS, and JavaScript."
+      },
+      {
+        "icon": "chart",
+        "title": "Data Analysis",
+        "text": "Turning raw data into clear insights and clean, easy-to-read visualisations."
+      },
+      {
+        "icon": "globe",
+        "title": "Digital Marketing",
+        "text": "Simple, measurable campaigns that connect your brand with the right audience."
+      },
+      {
+        "icon": "devices",
+        "title": "Responsive Website Development",
+        "text": "Websites that look and work beautifully across every screen size — from mobile to desktop."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Featured Projects",
+    "subtitle": "A selection of projects that demonstrate my design, development, and problem-solving skills.",
+    "items": [
+      {
+        "id": "p1",
+        "title": "Portfolio Website",
+        "badge": "Web Design",
+        "categories": "web-design development",
+        "image": "assets/images/project-1.jpg",
+        "summary": "A personal portfolio site focused on clean layout, subtle motion, and strong typography.",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "category": "Web Design · Development",
+        "role": "Full Stack Developer",
+        "tools": ["HTML5", "CSS3", "JavaScript", "Figma"],
+        "challenge": "Build a premium, responsive personal site from scratch — no frameworks — with a fast load and easy maintenance.",
+        "solution": "Created a small design-system approach with CSS variables, semantic HTML, and minimal vanilla JavaScript.",
+        "result": "A fast, accessible portfolio that adapts cleanly from mobile to desktop and is simple to update.",
+        "live": "",
+        "github": "https://github.com/Tanveer-dev770"
+      },
+      {
+        "id": "p2",
+        "title": "Academic Learning Platform",
+        "badge": "UI/UX · Education",
+        "categories": "ui-ux",
+        "image": "assets/images/project-2.jpg",
+        "summary": "A user-focused learning interface designed around clear navigation and progress tracking.",
+        "tags": ["UI/UX", "Prototyping", "Figma"],
+        "category": "UI/UX · Education",
+        "role": "UI/UX Designer",
+        "tools": ["Figma", "Wireframing", "Prototyping", "UX Research"],
+        "challenge": "Design an interface that keeps learners oriented across many courses, modules, and lessons.",
+        "solution": "Mapped user flows first, then built a clean navigation system, progress indicators, and consistent card-based layouts.",
+        "result": "An intuitive, low-friction learning experience validated with a clickable prototype and usability walkthroughs.",
+        "live": "https://tanveer-dev770.github.io/dyd-nu/",
+        "github": "https://github.com/Tanveer-dev770/dyd-nu"
+      },
+      {
+        "id": "p3",
+        "title": "Data Dashboard",
+        "badge": "Data Analysis",
+        "categories": "data",
+        "image": "assets/images/project-3.jpg",
+        "summary": "An interactive dashboard that turns raw metrics into clear, sharable visual stories.",
+        "tags": ["Excel", "Data Viz", "Charts"],
+        "category": "Data Analysis",
+        "role": "Data Analyst",
+        "tools": ["Excel", "Charts", "Data Cleaning", "Data Visualization"],
+        "challenge": "Make a large, messy dataset understandable at a glance for non-technical stakeholders.",
+        "solution": "Cleaned and structured the data, then chose the right chart types and highlights for each metric.",
+        "result": "A clear dashboard that supports quicker, more confident business decisions.",
+        "live": "",
+        "github": ""
+      },
+      {
+        "id": "p4",
+        "title": "Business Website",
+        "badge": "Web Development",
+        "categories": "development web-design",
+        "image": "assets/images/project-4.jpg",
+        "summary": "A professional company website balancing strong branding with clear user journeys.",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "category": "Web Development",
+        "role": "Designer & Developer",
+        "tools": ["HTML5", "CSS3", "JavaScript", "SEO"],
+        "challenge": "Communicate credibility while keeping the site light, fast, and easy to navigate.",
+        "solution": "Established a strong visual system, simplified the page structure, and optimized images and code.",
+        "result": "A polished online presence that loads quickly and guides visitors toward meaningful actions.",
+        "live": "https://tanveer-dev770.github.io/Technovabd/index.html",
+        "github": "https://github.com/Tanveer-dev770/Technovabd"
+      },
+      {
+        "id": "p5",
+        "title": "Digital Marketing Campaign",
+        "badge": "Digital Marketing",
+        "categories": "marketing",
+        "image": "assets/images/project-5.jpg",
+        "summary": "A focused campaign strategy with clear messaging, audience targeting, and results tracking.",
+        "tags": ["Strategy", "Social", "Analytics"],
+        "category": "Digital Marketing",
+        "role": "Marketing Specialist",
+        "tools": ["Strategy", "Social Media", "Copywriting", "Analytics"],
+        "challenge": "Reach the right audience with limited budget and measure what actually works.",
+        "solution": "Defined the audience and message, planned content across platforms, and tracked key performance metrics.",
+        "result": "A measurable campaign that improved reach and engagement while keeping costs controlled.",
+        "live": "",
+        "github": ""
+      },
+      {
+        "id": "p6",
+        "title": "Custom Landing Page",
+        "badge": "UI/UX · Conversion",
+        "categories": "ui-ux development",
+        "image": "assets/images/project-6.jpg",
+        "summary": "A conversion-focused landing page designed to guide visitors toward a single action.",
+        "tags": ["UI/UX", "Copy", "CSS"],
+        "category": "UI/UX · Conversion",
+        "role": "Designer & Developer",
+        "tools": ["HTML5", "CSS3", "Copywriting", "A/B Testing"],
+        "challenge": "Turn casual visitors into clear, confident action-takers without a cluttered page.",
+        "solution": "Kept one goal in mind, wrote benefit-led copy, and reduced every distraction outside the call to action.",
+        "result": "A focused landing page that improved clarity and conversion while staying fully responsive.",
+        "live": "https://tanveer-dev770.github.io/demoportfolio1/",
+        "github": "https://github.com/Tanveer-dev770/demoportfolio1"
+      }
+    ]
+  },
+  "skills": {
+    "heading": "What I Work With",
+    "subtitle": "A flexible toolkit across design, development, data, productivity, and marketing.",
+    "items": [
+      {
+        "icon": "sparkles",
+        "title": "Design",
+        "list": ["UI/UX Design", "Wireframing", "Prototyping", "Design Systems"]
+      },
+      {
+        "icon": "code",
+        "title": "Development",
+        "list": ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+      },
+      {
+        "icon": "chart",
+        "title": "Data",
+        "list": ["Data Analysis", "Data Visualization", "Data Entry"]
+      },
+      {
+        "icon": "clipboard",
+        "title": "Productivity",
+        "list": ["Microsoft Word", "Microsoft Excel", "PowerPoint", "Google Workspace"]
+      },
+      {
+        "icon": "globe",
+        "title": "Marketing",
+        "list": ["Digital Marketing", "Social Media Marketing", "Campaign Analysis"]
+      },
+      {
+        "noteTitle": "Always Learning",
+        "noteText": "I'm regularly adding new tools and techniques to this list. If you need something specific, just ask."
+      }
+    ]
+  },
+  "process": {
+    "heading": "My Design & Development Process",
+    "subtitle": "A clear, proven path from the first conversation to a finished product.",
+    "steps": [
+      {
+        "icon": "compass",
+        "title": "Discover",
+        "text": "Understand goals, users, requirements, and the real problems worth solving."
+      },
+      {
+        "icon": "document",
+        "title": "Plan",
+        "text": "Research, define scope, structure the content, and build clear wireframes."
+      },
+      {
+        "icon": "feather",
+        "title": "Design",
+        "text": "Create a clean, consistent, user-focused interface that builds trust at a glance."
+      },
+      {
+        "icon": "code",
+        "title": "Develop",
+        "text": "Build responsive, accessible, and performant interfaces with clean code."
+      },
+      {
+        "icon": "globe",
+        "title": "Test",
+        "text": "Test usability, responsiveness, accessibility, and cross-browser behavior."
+      },
+      {
+        "icon": "home",
+        "title": "Deliver",
+        "text": "Deploy the final product, document what matters, and provide ongoing support."
+      }
+    ]
+  },
+  "why": {
+    "heading": "Why Work With Me",
+    "subtitle": "The qualities that make a collaboration smooth and the end result worth it.",
+    "items": [
+      {
+        "icon": "sparkle",
+        "title": "Clean & Modern Design",
+        "text": "Thoughtful, minimal interfaces with strong hierarchy and a premium feel."
+      },
+      {
+        "icon": "devices",
+        "title": "Responsive Across Devices",
+        "text": "Every build is tested from small phones to large desktops — never broken in between."
+      },
+      {
+        "icon": "eye",
+        "title": "User-Focused Thinking",
+        "text": "Decisions grounded in user needs and goals, not just trends or preferences."
+      },
+      {
+        "icon": "chat",
+        "title": "Reliable Communication",
+        "text": "Clear updates, honest timelines, and a straightforward way of working together."
+      },
+      {
+        "icon": "check",
+        "title": "Attention to Detail",
+        "text": "Alignment, spacing, states, and edge cases — the small things get handled."
+      },
+      {
+        "icon": "speed",
+        "title": "Performance-Focused",
+        "text": "Fast-loading, efficient code that respects users' time and devices."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What Clients Say",
+    "subtitle": "<em>Placeholder content — replace with real feedback before publishing.</em>",
+    "items": [
+      {
+        "quote": "[Client testimonial goes here.] Replace this with a short, genuine quote about working together, the quality of the work, or the results delivered.",
+        "name": "[Client Name]",
+        "role": "[Job Title / Company]",
+        "rating": 5
+      },
+      {
+        "quote": "[Client testimonial goes here.] Describe the experience, communication, and the outcome. Keep it authentic and specific.",
+        "name": "[Client Name]",
+        "role": "[Job Title / Company]",
+        "rating": 5
+      },
+      {
+        "quote": "[Client testimonial goes here.] Talk about reliability, quality, and whether you would recommend their work to others.",
+        "name": "[Client Name]",
+        "role": "[Job Title / Company]",
+        "rating": 5
+      }
+    ]
+  },
+  "pricing": {
+    "heading": "Simple Options to Start",
+    "subtitle": "<em>Placeholder pricing — confirm your actual rates before publishing.</em>",
+    "items": [
+      {
+        "name": "Starter",
+        "price": "45",
+        "desc": "Small projects, quick wins, or a focused single-page site.",
+        "features": ["Single page / Portfolio Site", "Responsive layout", "Basic SEO setup", "1 revision round"],
+        "featured": false,
+        "cta": "Get Started"
+      },
+      {
+        "name": "Growth",
+        "price": "99",
+        "desc": "Multi-page business sites with design plus development.",
+        "features": ["Up to 6 pages", "UI/UX design included", "CMS or easy-to-edit content", "On-page SEO", "2 revision rounds"],
+        "featured": true,
+        "cta": "Get Started"
+      },
+      {
+        "name": "Premium",
+        "price": "249",
+        "desc": "Full product work, ongoing support, and priorities.",
+        "features": ["Unlimited pages / custom build", "Advanced interactions", "Analytics & performance tuning", "Priority support", "Ongoing maintenance"],
+        "featured": false,
+        "cta": "Get Started"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let's Build Something Amazing Together",
+    "subtitle": "Tell me about your project. I'll get back to you as soon as I can.",
+    "email": "tanveerdyd770@gmail.com",
+    "phone": "+880 1616 339517",
+    "phoneHref": "+8801616339517",
+    "location": "Bangladesh",
+    "availability": "Available for selected projects",
+    "noteTitle": "Prefer to talk?",
+    "noteText": "Email and phone work best. I usually reply within one business day.",
+    "formEndpoint": "",
+    "formService": ""
+  },
+  "footer": {
+    "brandText": "Creating thoughtful digital experiences that connect design, technology, and people.",
+    "social": [
+      { "key": "github", "label": "GitHub profile", "url": "https://github.com/Tanveer-dev770" },
+      { "key": "linkedin", "label": "LinkedIn profile", "url": "https://www.linkedin.com/in/tanveer770/" },
+      { "key": "facebook", "label": "Facebook profile", "url": "https://facebook.com/utanveer770" }
+    ]
+  },
+  "site": {
+    "title": "Tanveer — Full Stack Developer | Portfolio",
+    "description": "Portfolio of Tanveer, a Full Stack Developer focused on web design, UI/UX, web development, data analysis, and digital marketing.",
+    "author": "Tanveer",
+    "themeColor": "#0ea5a4",
+    "ogTitle": "Tanveer — Full Stack Developer | Portfolio",
+    "ogDescription": "Creating clean, responsive, user-friendly digital experiences that combine thoughtful design with reliable technology.",
+    "ogImage": "assets/images/profile.jpg",
+    "brandName": "Tanveer",
+    "copyright": "© 2026 Tanveer. All rights reserved."
+  }
+}

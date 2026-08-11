@@ -368,11 +368,18 @@ strong { color: var(--ink); font-weight: 600; }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.08fr .92fr;
+  grid-template-columns: 1fr 1fr;
   gap: clamp(2.5rem, 5vw, 4.5rem);
   align-items: center;
   position: relative;
   z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .hero-greeting {
@@ -394,6 +401,7 @@ strong { color: var(--ink); font-weight: 600; }
 }
 
 .hero-title {
+  line-height: 1.18;
   margin-bottom: 1.25rem;
 }
 .hero-title .accent {
@@ -454,24 +462,27 @@ strong { color: var(--ink); font-weight: 600; }
   padding: 2.5rem 1rem;
 }
 
+.hero-composition {
+  position: relative;
+  width: min(430px, 100%);
+  z-index: 2;
+}
+
 .hero-ring {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 1.5px dashed var(--border-strong);
 }
 .hero-ring--a {
-  width: 520px;
-  height: 520px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 121%;
+  aspect-ratio: 1;
 }
 .hero-ring--b {
-  width: 610px;
-  height: 610px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 142%;
+  aspect-ratio: 1;
   border-color: var(--mint-soft);
 }
 
@@ -497,7 +508,7 @@ strong { color: var(--ink); font-weight: 600; }
 
 .hero-frame {
   position: relative;
-  width: min(430px, 100%);
+  width: 100%;
   aspect-ratio: 10 / 11.4;
   border-radius: 46% 54% 52% 48% / 38% 38% 62% 62%;
   overflow: hidden;
@@ -511,6 +522,7 @@ strong { color: var(--ink); font-weight: 600; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   border-radius: inherit; /* match frame's organic radius */
 }
 
@@ -548,11 +560,11 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .hero-card--exp {
   top: 16%;
-  left: -2%;
+  left: -4%;
 }
 .hero-card--proj {
   bottom: 12%;
-  right: -3%;
+  right: -4%;
   animation-delay: 2.5s;
 }
 .hero-card-num {

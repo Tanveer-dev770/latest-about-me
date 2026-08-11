@@ -94,36 +94,54 @@
   /* ==========================================================================
      Project filtering
      ========================================================================== */
-  var filterButtons = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
-  var projectItems = Array.prototype.slice.call(document.querySelectorAll(".project-item"));
+  var filterButtons = [];
+  var projectItems = [];
 
-  function applyFilter(key) {
-    projectItems.forEach(function (item) {
-      var match = key === "all" || item.getAttribute("data-categories").split(" ").indexOf(key) !== -1;
-      item.classList.remove("is-shown");
-      item.classList.toggle("is-hidden", !match);
+  function initProjects() {
+    filterButtons = Array.prototype.slice.call(document.querySelectorAll(".filter-btn"));
+    projectItems = Array.prototype.slice.call(document.querySelectorAll(".project-item"));
+
+    // If live content was loaded, prefer filter behaviour on those elements.
+    var activeFilter = "all";
+    filterButtons.forEach(function (btn) {
+      if (btn.classList.contains("is-active")) activeFilter = btn.getAttribute("data-filter");
     });
-    // Let hidden items leave first, then animate the remaining ones in.
-    requestAnimationFrame(function () {
+
+    function applyFilter(key) {
+      projectItems.forEach(function (item) {
+        var match = key === "all" || item.getAttribute("data-categories").split(" ").indexOf(key) !== -1;
+        item.classList.remove("is-shown");
+        item.classList.toggle("is-hidden", !match);
+      });
+      // Let hidden items leave first, then animate the remaining ones in.
       requestAnimationFrame(function () {
-        projectItems.forEach(function (item) {
-          if (!item.classList.contains("is-hidden")) item.classList.add("is-shown");
+        requestAnimationFrame(function () {
+          projectItems.forEach(function (item) {
+            if (!item.classList.contains("is-hidden")) item.classList.add("is-shown");
+          });
         });
       });
-    });
-  }
+    }
 
-  filterButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      if (btn.classList.contains("is-active")) return;
-      filterButtons.forEach(function (b) {
-        var on = b === btn;
-        b.classList.toggle("is-active", on);
-        b.setAttribute("aria-pressed", String(on));
+    filterButtons.forEach(function (btn) {
+      btn.onclick = null;
+      btn.addEventListener("click", function () {
+        if (btn.classList.contains("is-active")) return;
+        filterButtons.forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle("is-active", on);
+          b.setAttribute("aria-pressed", String(on));
+        });
+        applyFilter(btn.getAttribute("data-filter"));
       });
-      applyFilter(btn.getAttribute("data-filter"));
     });
-  });
+
+    applyFilter(activeFilter);
+  }
+  initProjects();
+
+  // Re-initialise after content is applied from the admin JSON.
+  document.addEventListener("portfolio:render", initProjects);
 
   /* ==========================================================================
      Project modal
@@ -157,8 +175,8 @@
       challenge: "Design an interface that keeps learners oriented across many courses, modules, and lessons.",
       solution: "Mapped user flows first, then built a clean navigation system, progress indicators, and consistent card-based layouts.",
       result: "An intuitive, low-friction learning experience validated with a clickable prototype and usability walkthroughs.",
-      live: "",
-      github: "https://github.com/Tanveer-dev770"
+      live: "https://tanveer-dev770.github.io/dyd-nu/",
+      github: "https://github.com/Tanveer-dev770/dyd-nu"
     },
     p3: {
       title: "Data Dashboard",
@@ -171,7 +189,7 @@
       solution: "Cleaned and structured the data, then chose the right chart types and highlights for each metric.",
       result: "A clear dashboard that supports quicker, more confident business decisions.",
       live: "",
-      github: "https://github.com/Tanveer-dev770"
+      github: ""
     },
     p4: {
       title: "Business Website",
@@ -183,8 +201,8 @@
       challenge: "Communicate credibility while keeping the site light, fast, and easy to navigate.",
       solution: "Established a strong visual system, simplified the page structure, and optimized images and code.",
       result: "A polished online presence that loads quickly and guides visitors toward meaningful actions.",
-      live: "",
-      github: "https://github.com/Tanveer-dev770"
+      live: "https://tanveer-dev770.github.io/Technovabd/index.html",
+      github: "https://github.com/Tanveer-dev770/Technovabd"
     },
     p5: {
       title: "Digital Marketing Campaign",
@@ -197,7 +215,7 @@
       solution: "Defined the audience and message, planned content across platforms, and tracked key performance metrics.",
       result: "A measurable campaign that improved reach and engagement while keeping costs controlled.",
       live: "",
-      github: "https://github.com/Tanveer-dev770"
+      github: ""
     },
     p6: {
       title: "Custom Landing Page",
@@ -209,8 +227,8 @@
       challenge: "Turn casual visitors into clear, confident action-takers without a cluttered page.",
       solution: "Kept one goal in mind, wrote benefit-led copy, and reduced every distraction outside the call to action.",
       result: "A focused landing page that improved clarity and conversion while staying fully responsive.",
-      live: "",
-      github: "https://github.com/Tanveer-dev770"
+      live: "https://tanveer-dev770.github.io/demoportfolio1/",
+      github: "https://github.com/Tanveer-dev770/demoportfolio1"
     }
   };
 
@@ -221,7 +239,8 @@
   }
 
   function openModal(id) {
-    var p = projectData[id];
+    // Dynamic content (from admin JSON) takes precedence over defaults.
+    var p = (window.__PORTFOLIO_DATA__ && window.__PORTFOLIO_DATA__[id]) || projectData[id];
     if (!p) return;
 
     lastActive = document.activeElement;
@@ -243,6 +262,8 @@
     var github = document.getElementById("modalGithub");
     live.href = p.live;
     github.href = p.github;
+    live.hidden = !p.live;
+    github.hidden = !p.github;
 
     modal.hidden = false;
     lockScroll(true);
@@ -364,6 +385,40 @@
     if (!valid) {
       formStatus.textContent = "Please fix the highlighted fields above.";
       formStatus.hidden = false;
+      return;
+    }
+
+    var cfg = window.__CONTACT_CONFIG__ || {};
+    var endpoint = cfg.endpoint;
+
+    if (endpoint) {
+      var payload = {
+        name: document.getElementById("cf-name").value.trim(),
+        email: document.getElementById("cf-email").value.trim(),
+        type: document.getElementById("cf-type").value,
+        message: document.getElementById("cf-message").value.trim()
+      };
+
+      formStatus.textContent = "Sending...";
+      formStatus.hidden = false;
+
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("bad response");
+          formStatus.textContent = "Thanks! Your message has been sent.";
+          form.reset();
+        })
+        .catch(function () {
+          formStatus.textContent = "Sorry, something went wrong. Please email me directly.";
+        })
+        .finally(function () {
+          if (reduceMotion) return;
+          formStatus.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        });
       return;
     }
 
