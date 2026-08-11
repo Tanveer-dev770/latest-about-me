@@ -1,5 +1,5 @@
 /* ==========================================================================
-   [YOUR NAME] — Personal Portfolio
+   Tanveer — Personal Portfolio
    Scroll-reveal animations using IntersectionObserver.
    Respects prefers-reduced-motion (CSS also disables transitions).
    ========================================================================== */

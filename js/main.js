@@ -1,5 +1,5 @@
 /* ==========================================================================
-   [YOUR NAME] — Personal Portfolio
+   Tanveer — Personal Portfolio
    Core interactions: navigation, scroll state, scrollspy, project filter,
    project modal, contact form validation, back-to-top.
    No dependencies.
@@ -139,13 +139,13 @@
       category: "Web Design · Development",
       img: "assets/images/project-1.jpg",
       desc: "A personal portfolio site focused on clean layout, subtle motion, and strong typography.",
-      role: "[YOUR ROLE]",
+      role: "Full Stack Developer",
       tools: ["HTML5", "CSS3", "JavaScript", "Figma"],
       challenge: "Build a premium, responsive personal site from scratch — no frameworks — with a fast load and easy maintenance.",
       solution: "Created a small design-system approach with CSS variables, semantic HTML, and minimal vanilla JavaScript.",
       result: "A fast, accessible portfolio that adapts cleanly from mobile to desktop and is simple to update.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     },
     p2: {
       title: "Academic Learning Platform",
@@ -157,8 +157,8 @@
       challenge: "Design an interface that keeps learners oriented across many courses, modules, and lessons.",
       solution: "Mapped user flows first, then built a clean navigation system, progress indicators, and consistent card-based layouts.",
       result: "An intuitive, low-friction learning experience validated with a clickable prototype and usability walkthroughs.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     },
     p3: {
       title: "Data Dashboard",
@@ -170,8 +170,8 @@
       challenge: "Make a large, messy dataset understandable at a glance for non-technical stakeholders.",
       solution: "Cleaned and structured the data, then chose the right chart types and highlights for each metric.",
       result: "A clear dashboard that supports quicker, more confident business decisions.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     },
     p4: {
       title: "Business Website",
@@ -183,8 +183,8 @@
       challenge: "Communicate credibility while keeping the site light, fast, and easy to navigate.",
       solution: "Established a strong visual system, simplified the page structure, and optimized images and code.",
       result: "A polished online presence that loads quickly and guides visitors toward meaningful actions.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     },
     p5: {
       title: "Digital Marketing Campaign",
@@ -196,8 +196,8 @@
       challenge: "Reach the right audience with limited budget and measure what actually works.",
       solution: "Defined the audience and message, planned content across platforms, and tracked key performance metrics.",
       result: "A measurable campaign that improved reach and engagement while keeping costs controlled.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     },
     p6: {
       title: "Custom Landing Page",
@@ -209,8 +209,8 @@
       challenge: "Turn casual visitors into clear, confident action-takers without a cluttered page.",
       solution: "Kept one goal in mind, wrote benefit-led copy, and reduced every distraction outside the call to action.",
       result: "A focused landing page that improved clarity and conversion while staying fully responsive.",
-      live: "https://[YOUR-DOMAIN].com",
-      github: "https://github.com/[YOUR-GITHUB]"
+      live: "",
+      github: "https://github.com/Tanveer-dev770"
     }
   };
 

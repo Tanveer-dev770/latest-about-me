@@ -1,4 +1,4 @@
-# [YOUR NAME] — Personal Portfolio
+# Tanveer — Personal Portfolio
 
 A premium, fully responsive single-page portfolio built with **HTML5, CSS3, and vanilla JavaScript** — no frameworks, no libraries, no plugins.
 
@@ -24,7 +24,7 @@ npx serve .        # or: python -m http.server
 └── assets/
     ├── images/         # placeholder.jpg + 6 project previews
     ├── icons/          # favicon.svg
-    └── resume/         # YOUR-NAME-CV.pdf (placeholder)
+    └── resume/         # Tanveer-CV.pdf (placeholder)
 ```
 
 ## Customize before publishing
@@ -33,7 +33,7 @@ Everything is clearly marked with `[PLACEHOLDER]`:
 
 | Find | Replace with |
 | --- | --- |
-| `[YOUR NAME]` | Your name |
+| `Tanveer` | Your name |
 | `[YOUR ROLE]` | e.g. Web Designer & Developer |
 | `your@email.com`, `tel:+880XXXXXXXXXX` | Contact details |
 | `[YOUR-GITHUB]`, `[YOUR-LINKEDIN]`, `[YOUR-FACEBOOK]`, `[YOUR-INSTAGRAM]` | Profile URLs |
@@ -41,7 +41,7 @@ Everything is clearly marked with `[PLACEHOLDER]`:
 | `XX+` / `XX` / `XX%` in About | Real numbers (not fabricated) |
 | `assets/images/profile.jpg` | Your real photo (keep the filename) |
 | `assets/images/project-*.jpg` | Real project screenshots |
-| `assets/resume/YOUR-NAME-CV.pdf` | Your real CV (keep the filename) |
+| `assets/resume/Tanveer-CV.pdf` | Your real CV (keep the filename) |
 | Testimonials & pricing | Real feedback and rates |
 
 To remove a section (e.g. Pricing), delete its `<section id="...">` block in `index.html`.
