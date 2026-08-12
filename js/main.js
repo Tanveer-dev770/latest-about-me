@@ -155,15 +155,15 @@
     p1: {
       title: "Portfolio Website",
       category: "Web Design · Development",
-      img: "assets/images/project-1.jpg",
+      img: "assets/images/project-thumb.jpg",
       desc: "A personal portfolio site focused on clean layout, subtle motion, and strong typography.",
       role: "Full Stack Developer",
       tools: ["HTML5", "CSS3", "JavaScript", "Figma"],
       challenge: "Build a premium, responsive personal site from scratch — no frameworks — with a fast load and easy maintenance.",
       solution: "Created a small design-system approach with CSS variables, semantic HTML, and minimal vanilla JavaScript.",
       result: "A fast, accessible portfolio that adapts cleanly from mobile to desktop and is simple to update.",
-      live: "",
-      github: "https://github.com/Tanveer-dev770"
+      live: "https://tanveer-dev770.github.io/Dentora/",
+      github: "https://github.com/Tanveer-dev770/Dentora"
     },
     p2: {
       title: "Academic Learning Platform",

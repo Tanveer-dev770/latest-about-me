@@ -79,7 +79,7 @@
         "title": "Portfolio Website",
         "badge": "Web Design",
         "categories": "web-design development",
-        "image": "assets/images/project-1.jpg",
+        "image": "assets/images/project-thumb.jpg",
         "summary": "A personal portfolio site focused on clean layout, subtle motion, and strong typography.",
         "tags": ["HTML", "CSS", "JavaScript"],
         "category": "Web Design · Development",
@@ -88,8 +88,8 @@
         "challenge": "Build a premium, responsive personal site from scratch — no frameworks — with a fast load and easy maintenance.",
         "solution": "Created a small design-system approach with CSS variables, semantic HTML, and minimal vanilla JavaScript.",
         "result": "A fast, accessible portfolio that adapts cleanly from mobile to desktop and is simple to update.",
-        "live": "",
-        "github": "https://github.com/Tanveer-dev770"
+        "live": "https://tanveer-dev770.github.io/Dentora/",
+        "github": "https://github.com/Tanveer-dev770/Dentora"
       },
       {
         "id": "p2",
